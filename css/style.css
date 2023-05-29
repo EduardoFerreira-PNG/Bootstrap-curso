@@ -47,3 +47,150 @@ header, .navbar{
 .navbar-expand-lg .navbar-nav .nav-link{ /*O boot ja seta padding, logo usamos essa linhas (exemplo) para ficar acima do seu comando de style*/
     padding: 1rem .8rem;
 }
+
+/*SLIDER*/
+
+.container-fluid{
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption{
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;    
+}
+
+.main-btn{
+    background-color: #65DAF9;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+    top: 50%;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #65DAF9;
+}
+
+
+.carousel-indicators .active{
+    background-color: #65DAF9;
+}
+
+.carousel-indicators li{
+    list-style: none;
+}
+
+/* ABOUT */
+
+#about-area{
+    background-color: #f9f9f9;
+}
+
+.main-tittle{
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.main-tittle::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-tittle{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li{
+    line-height: 30px;
+}
+
+#about-list i{
+    color: #65DAF9;
+    margin-right: 15px;
+}
+
+/*Serviços*/
+
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+}
+
+.service-box i, .service-box h4{
+    transition: 0.5s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i ,.service-box:hover > h4{
+    transform: scale(1.1);
+    color: #65DAF9;
+}
+
+/* Dados */
+
+.circle-box div{
+    padding: 0 40px;
+}
+
+.progressbar-text{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
