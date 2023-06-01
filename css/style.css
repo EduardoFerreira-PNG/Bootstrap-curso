@@ -1,80 +1,84 @@
 /*Gerais*/
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-.row{
+.row {
     margin: 0;
 }
 
-.container{
+.container {
     padding: 70px 0;
 }
 
-p, li{
+p,
+li {
     color: #444;
     font-size: 14px;
 }
 
 /*Barra de Navegação*/
 
-header, .navbar{
+header,
+.navbar {
     background: #353D41;
 }
 
-#nav-container{
+#nav-container {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-#logo{
+#logo {
     width: 75px;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 0;
     color: #FFF;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: #fff;
 }
 
-#navbar-links a{
+#navbar-links a {
     color: #FFF;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{ /*O boot ja seta padding, logo usamos essa linhas (exemplo) para ficar acima do seu comando de style*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    /*O boot ja seta padding, logo usamos essa linhas (exemplo) para ficar acima do seu comando de style*/
     padding: 1rem .8rem;
 }
 
 /*SLIDER*/
 
-.container-fluid{
+.container-fluid {
     padding: 0;
 }
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item{
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
     height: 90vh;
 }
 
-#mainSlider .carousel-caption{
+#mainSlider .carousel-caption {
     top: 30%;
 }
 
-#mainSlider .carousel-caption h2{
+#mainSlider .carousel-caption h2 {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-#mainSlider .carousel-caption p{
+#mainSlider .carousel-caption p {
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 100px;
-    color: #fff;    
+    color: #fff;
 }
 
-.main-btn{
+.main-btn {
     background-color: #65DAF9;
     color: #fff;
     text-transform: uppercase;
@@ -88,7 +92,7 @@ header, .navbar{
     top: 50%;
 }
 
-.main-btn:hover{
+.main-btn:hover {
     text-decoration: none;
     color: #fff;
     background-color: transparent;
@@ -96,21 +100,21 @@ header, .navbar{
 }
 
 
-.carousel-indicators .active{
+.carousel-indicators .active {
     background-color: #65DAF9;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
     list-style: none;
 }
 
 /* ABOUT */
 
-#about-area{
+#about-area {
     background-color: #f9f9f9;
 }
 
-.main-tittle{
+.main-tittle {
     color: #444;
     margin: 0 0 65px 0;
     font-size: 40px;
@@ -127,37 +131,38 @@ header, .navbar{
     left: 42.5%;
 }
 
-.about-tittle{
+.about-tittle {
     font-size: 17px;
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#about-list{
+#about-list {
     list-style: none;
     padding-left: 0;
 }
 
-#about-list li{
+#about-list li {
     line-height: 30px;
 }
 
-#about-list i{
+#about-list i {
     color: #65DAF9;
     margin-right: 15px;
 }
 
 /*Serviços*/
 
-.service-box{
+.service-box {
     text-align: center;
     margin-bottom: 50px;
     cursor: pointer;
 
 }
 
-.service-box i, .service-box h4{
+.service-box i,
+.service-box h4 {
     transition: 0.5s;
 }
 
@@ -167,30 +172,95 @@ header, .navbar{
     color: #444;
 }
 
-.service-box h4{
+.service-box h4 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.service-box:hover > i ,.service-box:hover > h4{
+.service-box:hover>i,
+.service-box:hover>h4 {
     transform: scale(1.1);
     color: #65DAF9;
 }
 
 /* Dados */
 
-.circle-box div{
+.circle-box div {
     padding: 0 40px;
 }
 
-.progressbar-text{
+.progressbar-text {
     font-weight: bold;
     font-size: 32px;
 }
 
-#data-area p{
+#data-area p {
     color: #fff;
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
+}
+
+/*TIME*/
+
+.card-body {
+    text-align: center;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+    border: 3px rgba(0, 0, 15, .25) solid;
+}
+
+/*Trabalhe conosco*/
+
+#apply-area{
+    height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row{
+   height: 100%;
+}
+
+#apply-area .apply-box{
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#company-img{
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#pattern-img h4, #pattern-img p{
+    color: #FFF;
+}
+
+#pattern-img h4{
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#pattern-img p{
+    margin-bottom: 20px;
+}
+
+#apply-btn{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+#apply-btn:hover{
+    border-color: #65DAF9;
+    background-color: #65DAF9;
 }

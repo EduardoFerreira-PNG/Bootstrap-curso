@@ -8,14 +8,14 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1400,
+        duration: 1700,
         from: {color: '#AAA'},
         to:{color: '#65DAF9'},
 
         step: function(state, circle){
             circle.path.setAttribute('stroke', state.color);
     
-            let value = Math.round(circle.value() * 60);
+            let value = Math.round(circle.value() * 80);
 
             circle.setText(value);
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1600,
+        duration: 1800,
         from: {color: '#AAA'},
         to:{color: '#65DAF9'},
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1800,
+        duration: 1900,
         from: {color: '#AAA'},
         to:{color: '#65DAF9'},
 
@@ -107,7 +107,13 @@ $(document).ready(function(){
         }
     });
 
-    
+    //Parallax 
+
+    setTimeout(function(){
+        $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
+        $('#apply-area').parallax({imageSrc: 'img/pattern.png'});
+
+    });
 
 
 });
